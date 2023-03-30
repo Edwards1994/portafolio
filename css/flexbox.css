@@ -1,0 +1,99 @@
+/*Sección Title*/
+
+.title .title__div{
+    display: flex;
+    gap: 5%;
+}
+.title__profile{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+}
+.title__network{
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Sección skills*/
+
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Sección Hobbies*/
+
+.hobbies__line{
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbies .hobbies__div{
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbies__container{
+    justify-content: center;
+}
+.hobbies__profile{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.hobbies__container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+.hobbies__line{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+/*Sección academic*/
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.academic__courses__box {
+    width: 33%;
+}
+.academic__courses__item__img {
+    background-color: #fff;
+    padding: 2rem;
+    margin: auto;
+}
+.academic__courses__item__img img {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+/* experiencia*/
+
+.experiencie__box__1{
+    display: flex;
+    justify-content: center;
+}
+.experiencie__box {
+    width: 33%;
+}
+.experience__description{
+    padding-bottom: 1rem;
+}
+
+/*Contacto*/
+.formcontato__text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+{
+  "profile": {
+    "rol": "Front-end developer",
+    "description": "I'm a Front-End Developer, with knowledge in HTML5, CSS3, JavaScript, Git and Github. Looking for a Front-End Developer position."
+  },
+  "experience": {
+    "first-job-title": "Backend-end Developer",
+    "first-job-dates": "Jan 1995 - Jan 2000",
+    "first-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "second-job-title": "Front-end Developer",
+    "second-job-dates": "Feb 2000 - Mar 2005",
+    "second-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "last-job-title": "Front-end Developer",
+    "last-job-dates": "Feb 2017 - Current",
+    "last-job-description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+  }
+}
