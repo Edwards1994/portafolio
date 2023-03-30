@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonte del Proyecto Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sección del Menú  -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <h3>&ltEdwards Flores&gt</h3>
+        </a>
+        <ul class="navegador">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mi</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#experiencia ">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección del Header/Title/Hero -->
+    <section class="title" id="inicio">
+    <div class="container">
+        <div class="title__div">
+            <img class="title__profile" src="img/perfil.jpg">
+            
+            <div class="title__container">
+                <h3 class="card__subtitle">Hola, soy</h3>
+              <h1>&ltEdwards Flores&gt</h1>
+                <h2 class="title__bio" data-section="profile" data-value="rol">Desarrollador Front-end</h2>
+                <p data-section="profile" data-value="description">Soy desarrollador Front-End, con conocimientos en HTML5, CSS3, JavaScript, Git y Github. En búsqueda de trabajo como Front-End Developer.</p>
+                <ul class="title__network">
+                     <!-- Pon los enlaces de tus redes sociales favoritas -->
+                    <li class="title__network__item"><a href=""><i class="fa-brands fa-github fa-beat-fade"></i> Github <img src="img/arrow.png"></a></li>
+                    <li class="title__network__item"><a href=""><i class="fa-brands fa-linkedin-in fa-beat-fade"></i> Linkedin <img src="img/arrow.png"></a></li>
+                    <li class="title__network__item"><a href=""><i class="fa-brands fa-facebook fa-beat-fade"></i> Facebook <img src="img/arrow.png"></a></li>
+                </ul>
+        
+                <!--<div id="buttons">
+                    <button data-language="es">Español</button>
+                    <button data-language="en">Inglés</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- Sección sobre mi -->
+    <section class="about" id="sobre-mi">
+    <div class="container">
+        <div class="about__container">
+            <h2>Sobre mi</h2>
+            <p> ¡Hola! Soy una desarrolladora frontend junior altamente motivada y apasionada por crear experiencias de usuario excepcionales. Me encanta trabajar en proyectos que desafíen mis habilidades técnicas y me permitan ser creativa en la construcción de soluciones personalizadas para cada cliente.
+
+                Además de mi experiencia en HTML, CSS y JavaScript, también tengo habilidades técnicas sólidas en diseño y desarrollo de interfaces de usuario y páginas web utilizando WordPress y Webflow, así como en la integración de datos con MySQL. En mi tiempo libre, disfruto jugando tenis ball, viendo mis series favoritas, escuchando música, cocinando, tocando la guitarra y explorando nuevos lugares.
+                
+                Si estás buscando a alguien apasionado por la tecnología y con habilidades excepcionales en desarrollo frontend, no dudes en contactarme. Me encantaría tener la oportunidad de trabajar contigo en tu próximo proyecto web y ayudarte a crear una experiencia de usuario excepcional. </p>
+            <!-- Si quieres, pon tú firma acá! -->
+            <img src="img/signature.png">
+
+            <div class="cv__button">
+                <div class="cv__btn__h2" id="cv__btn___h2">
+                  <button class="cv_btn" onClick=downloadCv() id="cv__btn"><img class="cv_pais" src="img/bandera-paises/pe.svg" class="spa_flag"><h3>Spa</h3></button>              
+                  <img src="img/download.svg" class="download__icon" id="download_icon"><h3 class="text__descargar___cv" id="download__cv">Descargar CV</h3>
+                  <button class="cv_btn" onClick=downloadResume() id="resume___btn"><img class="cv_pais" src="img/bandera-paises/us.svg" class="eng_flag"><h3>Eng</h3></button>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Sección de Skills -->
+    
+    <section class="skills" id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-html5 fa-bounce fa-2xl" style="color: #DD4B25;"></i></li>
+                        <li class="skills__name"> HTML 5</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-css3-alt fa-bounce fa-2xl" style="color: #004CE8;"></i></li>
+                        <li class="skills__name">CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-js fa-bounce fa-2xl" style="color: #EFD81D;"></i></li>
+                        <li class="skills__name">Javascript</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-react fa-bounce fa-2xl" style="color: #80DEEA;"></i></li>
+                        <li class="skills__name">React</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-bootstrap fa-bounce fa-2xl" style="color: #7A10ED;"></i></li>
+                        <li class="skills__name">Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-solid fa-database fa-bounce fa-2xl" style="color: #072d6e;"></i></li>
+                        <li class="skills__name">MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-php fa-bounce fa-2xl" style="color: #7377AD;"></i></li>
+                        <li class="skills__name">php</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-figma fa-bounce fa-2xl" style="color: #00BCFF;"></i></li>
+                        <li class="skills__name">Figma</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-git-alt fa-bounce fa-2xl" style="color: #E84E31;"></i></li>
+                        <li class="skills__name">Git</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-wordpress fa-bounce fa-2xl" style="color: #52A8CC;"></i></li>
+                        <li class="skills__name">WordPress</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-shopify fa-bounce fa-2xl" style="color: #8CB442;"></i></li>
+                        <li class="skills__name">Shopify</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-cpanel fa-bounce fa-2xl" style="color: #FF6C2C;"></i></li>
+                        <li class="skills__name">cPanel</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-brands fa-github fa-bounce fa-2xl" style="color: #1d2025;"></i></li>
+                        <li class="skills__name">Github</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-sharp fa-solid fa-images fa-bounce fa-2xl" style="color: #00C5F7;"></i></li>
+                        <li class="skills__name">Photoshop</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><i class="fa-sharp fa-solid fa-file-excel fa-bounce fa-2xl" style="color: #2E7D32;"></i></li>
+                        <li class="skills__name">Excel</li>
+                    </ul>
+                </div>
+
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección de Hobbies -->
+
+    <section class="hobbies" id="hobbies">
+        <div class="container">
+            <div class="hobbies__div">
+                <div class="hobbies__container">
+                    <h2>Hobbies</h2>
+                    <p>Las actividades que me gusta realizar por que lo disfruto haciendo en mi tiempo libre.</p>
+                </div>
+                <div class="hobbies__line">
+                    <div class="hobbies__box1">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-music  fa-2xl"></i></li>
+                            <li class="hobbies__name">Oir música</li>
+                        </ul>
+                    </div>
+    
+                    <div class="hobbies__box2">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-person-running fa-2xl"></i></li>
+                            <li class="hobbies__name">Correr</li>
+                        </ul>
+                    </div>
+    
+                    <div class="hobbies__box3">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-trophy fa-2xl"></i></li>
+                            <li class="hobbies__name">Juego de mesa</li>
+                        </ul>
+                    </div>
+
+                    <div class="hobbies__box4">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-laptop fa-2xl"></i></li>
+                            <li class="hobbies__name">Aprendizaje online</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hobbies__box5">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-recycle fa-2xl"></i></li>
+                            <li class="hobbies__name">Reciclar</li>
+                        </ul>
+                    </div>
+
+                    <div class="hobbies__box6">
+                        <ul>
+                            <li class="hobbies__img"><i class="fa-solid fa-person-biking fa-2xl"></i></li>
+                            <li class="hobbies__name">Ciclismo</li>
+                        </ul>
+                    </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección de Formación académica -->
+    <section class="academic" id="formacion">
+    <div class="container">
+        <h2>Formación académica</h2>
+        <div class="academic__courses">
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="img/formacion-academica/senati.webp"></li>
+                    <li class="academic__courses__item__title"><h4>Desarrollo de Software</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2017 - SENATI</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!--Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="img/formacion-academica/aluralatam.webp"></li>
+                    <li class="academic__courses__item__title"><h4>Desarrollador Front End</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>En curso 2023 - Alura</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="img/formacion-academica/freecodecamp.webp"></li>
+                    <li class="academic__courses__item__title"><h4>Desarrollo de Back End</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>En curso 2023 - FreeCodeCamp</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Sección de Experiencia Profesional/Proyectos-->
+    <section class="experience" id="experiencia">
+    <div class="container">
+        <h2>Experiencia profesional</h2>
+        <div class="experiencie__box__1">
+
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="img/experience/secretcode_print.png">
+                    <h3>Encriptador de Texto</h3>
+                        <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo"><a target="_blank" href="https://github.com/Edwards1994/text-encryptor-alura-oracle"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a target="_blank" href="https://edwards1994.github.io/text-encryptor-alura-oracle/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        </div>
+            </div>
+
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="img/experience/barberia.png">
+                    <h3>Mini Alura</h3>
+                        <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo"><a target="_blank" href="https://github.com/Edwards1994/Mini-Alura.git"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a target="_blank" href="https://edwards1994.github.io/Mini-Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        </div>
+            </div>
+
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="img/experience/Apeperia.PNG">
+                    <h3>Apeperia</h3>
+                        <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__repo"><a target="_blank" href="https://github.com/Edwards1994/Apeperia.git"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a target="_blank" href="https://edwards1994.github.io/Apeperia/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        </div>
+            </div>  
+
+    </div>
+    </div>  
+    </section>
+
+        <!-- Sección de Contacto -->
+      <section class="formcontato" id="contacto">
+        <div class="container">
+        <div class="formcontato__contacto">
+          <div class="formcontato--esquerda">
+            <img class="formcontato__img" src="img/contact_image.png" />
+          </div>
+          <div class="formcontato__text">
+            <h2 class="formcontato__title">Contacto</h2>
+            <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+            <h3 class="formcontato__subtext">
+              Complete el siguiente formulario y me pondré en contacto con usted
+              lo antes posible.
+            </h3>
+            <form class="formcontato__form" name="form" id="form">
+              <div id="input_nombre" class="input">
+                <input
+                  class="formcontato__input"
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre"
+                />
+                <i class="validar-estado fas fa-times-circle"></i>
+              </div>
+              <div id="input_email" class="input">
+                <input
+                  class="formcontato__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <i class="validar-estado fas fa-times-circle"></i>
+              </div>
+              <div id="input_asunto" class="input">
+                <input
+                  class="formcontato__input"
+                  type="text"
+                  name="asunto"
+                  placeholder="Assunto"
+                />
+                <i class="validar-estado fas fa-times-circle"></i>
+              </div>
+              <div id="input_mensaje" class="input">
+                <textarea
+                  class="formcontato__textarea"
+                  rows="5"
+                  cols="40"
+                  id="mensagem"
+                  name="mensaje"
+                  placeholder="Mensaje"
+                ></textarea>
+                <i class="validar-estado fas fa-times-circle"></i>
+              </div>
+            
+              <a href="mailto:brct93@gmail.com" id="enviar">
+                <input type="submit" class="formcontato__botao" value="Enviar mensaje">
+              </a>
+            </form>
+          </div>
+        </div>
+    </div>
+      </section>
+
+        <!-- Sección de Footer -->
+        <section class="footer">
+        <div class="container">
+            <div class="footer__rodape">
+                <p>Desarrollado por Edwards Flores 2023</p>
+            </div>
+        </div>
+        </section>
+
+ <!-- Script del documento JavaScript -->
+<script src="validacion.js"></script>
+<script src="js/scripts-idioma.js"></script>
+</body>
+</html>
